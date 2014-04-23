@@ -1,4 +1,4 @@
-require "./hipster"
+require "minitest/autorun"
 
 class Meme
   def i_can_has_cheezburger?
@@ -10,7 +10,7 @@ class Meme
   end
 end
 
-class TestMeme < Hipster::Test
+class TestMeme < Minitest::Test
   def setup
     @meme = Meme.new
   end
